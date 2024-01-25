@@ -1,3 +1,7 @@
+*{
+    margin:0%;
+}
+
 #navigation-bar{
     width: 100%;
     display:flex;
@@ -6,7 +10,11 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    position:sticky;
+    top:0px;
+    margin-top: 0px;
 }
+
 #logo{
     margin-bottom: 10px;
     background-image:url("./logo.png");
@@ -15,6 +23,7 @@
     width:100px;
     height:7vh;
 }
+
 .search{
     display:flex;
     justify-content: space-evenly;
@@ -25,23 +34,167 @@
     border-radius:30px;
     margin-right:20vw;
 }
+
 .search-icon{
     font-size: 1.2rem;
 }
+
 .search-icon:hover{
     cursor: pointer;
 }
+
 .search-bar{
     font-weight: 300;
     font-size: 1.20rem;
     border:none;
     width:15vw;
 }
+
 .icons{
     color:white;
     font-size: 2rem;
     margin:20px;
 }
+
 .icons:hover{
     color:antiquewhite;
+}
+
+#postwindow{
+    display: flex;
+    border:2px solid violet;
+    justify-content:center;
+}
+
+#userinformation{
+    border:2px solid black;
+    height:90vh;
+    margin-top: 0px;
+    width:25vw;
+    position: sticky;
+    top:9vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#post{
+    height:10vh;
+    width:20vw;
+    border:2px solid salmon;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.postheadings{
+    height:10vh;
+    width:20vw;
+    border:2px solid salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+#postcoloumn{
+    border:2px solid black;
+    height:550vh;
+    margin-top: 0px;
+    width:80vw;
+    background-color: bisque;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.post{
+    height:90vh;
+    width:70vw;
+    border: 2px solid brown;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.photopost{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:15vh;
+    width:70vw;
+    border:2px solid green;
+}
+
+.photo{
+    border: 2px solid pink;
+    height:15vh;
+    width:10vw;
+    background-image: url(./avtar.png);
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+.postcontrol{
+    border:2px solid white;
+    height:15vh;
+    width:55vw;
+}
+
+.postname{
+    border:2px solid magenta;
+    height: 8vh;
+    width:54vw;
+    font-size: 2rem;
+}
+
+.postauthor{
+    border:2px solid mediumblue;
+    height:6vh;
+    width:54vw;
+    font-size:2rem;
+}
+
+.postcontent{
+    border: 2px solid yellowgreen;
+    height: 50vh;
+    width:70vw;
+    color:blue;
+    font-size:1.7rem;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.ReadMore{
+    font-size: 1.5rem;
+}
+
+.read{
+    border:2px solid palevioletred;
+    height:10vh;
+}
+
+.postrecord{
+    border:2px solid orangered;
+    height:9vh;
+    width:70vw;
+    display:flex ;
+    align-items: center;
+}
+
+.likes{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:15vw;
+    margin-right: 25vw;
+}
+
+.dislikes{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
