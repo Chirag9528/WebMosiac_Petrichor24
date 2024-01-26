@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Post6</title>
+</head>
+<body>
+    <div id="navigation-bar">
+        <div id="logo"></div>
+
+        <div class="search">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="search-bar">
+                <input type="search" placeholder="Search Here" class="search-bar">
+            </div>
+            <div class="search-menu">
+                <i class="fa-solid fa-list-ul"></i>
+            </div>
+        </div>
+
+        <div id="home" class="icons">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        
+        <div id="network" class="icons">
+            <i class="fa-solid fa-user-group"></i>
+        </div>
+
+        <div id="message" class="icons">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <div id="videos" class="icons">
+            <i class="fa-solid fa-tv"></i>
+        </div>
+
+        <div id="account" class="icons">
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+    <div id="post6" class="post">
+        <div class="photopost" >
+            <div class="photo"></div>
+            <div class="postcontrol">
+                <div class="postname" id="a6"></div>
+                <div class="postauthor" id="z6"></div>
+            </div>
+        </div>
+        <div class="postcontent" id="p6"></div>
+        <div class="postrecord" id="k6">
+            <div class="likes"><i class="fa-solid fa-thumbs-up"></i>
+                <div id="l6" class="likefont"></div>
+            </div>
+            <div class="dislikes"><i class="fa-solid fa-thumbs-down"></i>
+                <div id="d6" class="likefont"></div>
+            </div>
+        </div>
+        <div class="read"><button class="ReadMore" onclick="goback()">Previous Page</button></div>
+    </div>
+
+    <script>
+        function goback(){
+            window.location.href ="./Homepage.html"
+        }
+        fetch("http://webmosaic.petrichor.events:8080/post?id=6")
+            .then(res => res.json())
+            .then(data => {document.getElementById("p6").innerHTML = data.body ,
+                document.getElementById("a6").innerHTML = data.name,
+                document.getElementById("l6").innerHTML = data.likes,
+                document.getElementById("d6").innerHTML = data.dislikes
+                })
+
+        fetch("http://webmosaic.petrichor.events:8080/author?id=3")
+            .then(res => res.json())
+            .then(data =>document.getElementById("z6").innerHTML = "-by " +data.name
+                )
+    </script>
+</body>
+</html>

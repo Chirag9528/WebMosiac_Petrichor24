@@ -1,3 +1,22 @@
+function gotopost1(){
+    window.location.href="./post1.html";
+}
+function gotopost2(){
+    window.location.href="./post2.html";
+}
+
+function gotopost3(){
+    window.location.href="./post3.html";
+}
+function gotopost4(){
+    window.location.href="./post4.html";
+}
+function gotopost5(){
+    window.location.href="./post5.html";
+}
+function gotopost6(){
+    window.location.href="./post6.html";
+}
 function post1(){
     window.scroll(0,0)
 }
