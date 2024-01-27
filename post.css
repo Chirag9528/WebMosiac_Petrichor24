@@ -62,7 +62,7 @@
 
 .post{
     height:140vh;
-    width:98vw;
+    width:99.5vw;
     border: 5px solid brown;
     display: flex;
     align-items: center;
@@ -220,6 +220,24 @@
     .iconsize{
         font-size: 2rem;
     }
+    #post1 , #p1{
+        height:130vh;
+    }
+    #post2,#p2{
+        height:140vh;
+    }
+    #post3 , #p3{
+        height:150vh;
+    }
+    #post4 , #p4{
+        height: 150vh;
+    }
+    #post5 , #p5{
+        height:170vh;
+    }
+    #post6 , #p6{
+        height:150vh;
+    }
     
 }
 @media (min-width:900px) and (max-width:1000px){
@@ -262,6 +280,9 @@
     }
     .iconsize{
         font-size: 2rem;
+    }
+    #post1,#post2,#post3,#post4,#post5,#post6{
+        width:99vw;
     }
 }
 @media (min-width:600px) and (max-width:700px){
@@ -319,6 +340,20 @@
     .iconsize{
         font-size: 1.5rem;
     }
+    .postcontent{
+        padding-left: 12px;
+    }
+    #post2 , #post3 , #post4 , #post5 , #post6{
+        height:160vh;
+        width:97vw;
+    }
+    #post1{
+        width:97vw;
+    }
+    #p2 , #p3 , #p4 , #p5 , #p6{
+        height:150vh;
+    }
+    
 }
 @media screen and (max-width:300px){
     *{
