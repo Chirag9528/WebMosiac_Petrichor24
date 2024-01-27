@@ -149,11 +149,11 @@
 }
 
 @keyframes textcolor{
-    20%{color:color-mix(in srgb, red 50%, brown 50%)};
-    40%{color:antiquewhite};
-    60%{color:cadetblue};
-    80%{color:aliceblue};
-    100%{color:burlywood}
+    20%{color:blue};
+    40%{color:brown};
+    60%{color:blueviolet};
+    80%{color:chocolate};
+    100%{color:orange}
 }
 
 .postrecord{
