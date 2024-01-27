@@ -24,23 +24,23 @@
         </div>
 
         <div id="home" class="icons">
-            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-house iconsize" onclick="gotohome()"></i>
         </div>
         
         <div id="network" class="icons">
-            <i class="fa-solid fa-user-group"></i>
+            <i class="fa-solid fa-user-group iconsize"></i>
         </div>
 
         <div id="message" class="icons">
-            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-envelope iconsize"></i>
         </div>
 
         <div id="videos" class="icons">
-            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-tv iconsize"></i>
         </div>
 
         <div id="account" class="icons">
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-user iconsize"></i>
         </div>
     </div>
     <div id="post3" class="post">
@@ -64,9 +64,13 @@
     </div>
 
     <script>
+        function gotohome(){
+            window.location.href="./Homepage.html";
+        }
         function goback(){
             window.location.href ="./Homepage.html"
         }
+
         fetch("http://webmosaic.petrichor.events:8080/post?id=3")
             .then(res => res.json())
             .then(data => {document.getElementById("p3").innerHTML = data.body ,
@@ -78,7 +82,8 @@
         fetch("http://webmosaic.petrichor.events:8080/author?id=1")
             .then(res => res.json())
             .then(data =>document.getElementById("z3").innerHTML = "-by " +data.name
-                )
+                        )
+
     </script>
 </body>
 </html>
