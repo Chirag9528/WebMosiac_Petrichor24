@@ -71,7 +71,7 @@
             window.location.href ="./index.html"
         }
 
-        fetch("http://webmosaic.petrichor.events:8080/post?id=2")
+        fetch("http://webmosaic.petrichor.events/post?id=2")
             .then(res => res.json())
             .then(data => {document.getElementById("p2").innerHTML = data.body ,
                 document.getElementById("a2").innerHTML = data.name,
@@ -79,7 +79,7 @@
                 document.getElementById("d2").innerHTML = data.dislikes
                 })
 
-        fetch("http://webmosaic.petrichor.events:8080/author?id=1")
+        fetch("http://webmosaic.petrichor.events/author?id=1")
             .then(res => res.json())
             .then(data =>document.getElementById("z2").innerHTML = "-by " +data.name
                     )
